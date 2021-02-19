@@ -25,9 +25,9 @@ class _HomePageState extends State<HomePage> {
     String _url =
         "https://api.unsplash.com/photos/?client_id=cf49c08b444ff4cb9e4d126b7e9f7513ba1ee58de7906e4360afc1a33d1bf4c0";
     var result = await http.get(_url);
-    list = jsonDecode(result.body);
-    print(result);
-    //list[0]['urls']['small']
+    setState(() {
+      list = jsonDecode(result.body);
+    });
   }
 
   @override

@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="apps.as.test.test_unsplash">
+    <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="test_unsplash"
         android:icon="@mipmap/ic_launcher">
